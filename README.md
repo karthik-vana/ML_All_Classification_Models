@@ -13,23 +13,28 @@ This project implements a **complete Handwritten Digit Classification system** u
 
 ## 🎯 Project Objectives
 
-✅ Build a robust digit classification pipeline  
-✅ Compare multiple ML algorithms systematically  
-✅ Visualize model performance using ROC curves  
-✅ Optimize the best model through hyperparameter tuning  
-✅ Deploy a production-ready classifier  
+ ▫️Compare multiple ML algorithms systematically  
+ ▪️Visualize model performance using ROC curves  
+ ▫️Optimize the best model through hyperparameter tuning  
+ ▫️Deploy a production-ready classifier  
 
 ---
 
+## Click here for Dataset 📚📌
+<div align="side"> 
+    
+[![Kaggle](https://img.shields.io/badge/Kaggle-100000?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
+</div>
+
 ## 🚀 Project Workflow
 
-### ✅ 1. Data Loading & Preprocessing
+### 1️⃣. Data Loading & Preprocessing
 - Loaded MNIST dataset in CSV format (`label + 784 pixel features`)
 - Handled missing values and data inconsistencies
 - Normalized pixel values (0-255 → 0-1)
 - Split data into **training** and **testing** sets
 
-### ✅ 2. Model Training & Implementation
+### 2️⃣. Model Training & Implementation
 Built a custom Python class `MNISTModel` that trains **9 ML algorithms**:
 
 | Model | Algorithm Type |
@@ -49,14 +54,14 @@ Built a custom Python class `MNISTModel` that trains **9 ML algorithms**:
 - Stores trained model for comparison
 - Supports probability predictions for ROC analysis
 
-### ✅ 3. Model Comparison Using ROC Curves
+### 3️⃣. Model Comparison Using ROC Curves
 - Computed `predict_proba` for all models
 - Converted **multiclass problem → binary** (One-vs-Rest for Class 1)
 - Plotted **all 9 ROC curves** on a single graph
 - Calculated **AUC (Area Under Curve)** for each model
 - **Result:** SVM with RBF kernel achieved the highest AUC → selected as final model
 
-### ✅ 4. Hyperparameter Tuning with GridSearchCV
+### 4️⃣. Hyperparameter Tuning with GridSearchCV
 Fine-tuned the SVM model by testing combinations of:
 ```python
 param_grid = {
@@ -68,11 +73,11 @@ param_grid = {
 }
 ```
 
-- Used **5-fold cross-validation**
+- Used **cross-validation**
 - Identified optimal hyperparameters
 - Significantly improved model stability and accuracy
 
-### ✅ 5. Final Model Evaluation
+### 5️⃣. Final Model Evaluation
 Trained the final SVM with best parameters and evaluated using:
 
 📊 **Metrics:**
@@ -81,7 +86,7 @@ Trained the final SVM with best parameters and evaluated using:
 - **Confusion Matrix** (10×10 for digits 0-9)
 - **Classification Report** (Precision, Recall, F1-Score per digit)
 
-### ✅ 6. Model Deployment
+### 6️⃣. Model Deployment
 - Saved the final trained SVM using `pickle`
 - Tested predictions on random 784-pixel inputs
 - Model ready for production deployment
@@ -213,12 +218,8 @@ print(f"Predicted Digit: {prediction[0]}")
 ## 📈 Sample Visualizations
 
 ### ROC Curves Comparison
-![ROC Curves](visualizations/roc_curves.png)
+![ROC Curves](Roc-Auc_curve.jpg)
 *All 9 models plotted together showing SVM's superior performance*
-
-### Confusion Matrix (Final SVM)
-![Confusion Matrix](visualizations/confusion_matrix.png)
-*10×10 matrix showing digit classification accuracy*
 
 ---
 
@@ -247,7 +248,7 @@ Through this project, I gained hands-on experience with:
 
 ## 🙏 Acknowledgements
 
-Special thanks to **Satish Sir**, Trainer & CEO at **Vihara Tech** 👉 [viharatech.com](https://www.viharatech.com/)  
+First & most a very Special thanks to [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-kamal-korlakunta/), Trainer & CEO at **Vihara Tech** 👉 [viharatech.com](https://www.viharatech.com/)  
 For his invaluable guidance throughout my **Data Science with Gen AI** journey.
 
 ---
@@ -256,9 +257,9 @@ For his invaluable guidance throughout my **Data Science with Gen AI** journey.
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yourprofile)
-[![HackerRank](https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/yourprofile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karthik-vana)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthik-vana)
+[![HackerRank](https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/profile/karthikvana236)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio-link.com)
 
 </div>
@@ -275,6 +276,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 **⭐ If you find this project helpful, please consider giving it a star! ⭐**
 
-*Built with ❤️ as part of my Data Science journey*
+*Built with ❤️ & python🐍 as part of my Data Science journey*
 
 </div>
