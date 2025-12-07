@@ -21,7 +21,7 @@ This project implements a **complete Handwritten Digit Classification system** u
 ---
 
 ## Click here for Dataset 📚📌
-<div align="side"> 
+<div align="center"> 
     
 [![Kaggle](https://img.shields.io/badge/Kaggle-100000?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
 </div>
